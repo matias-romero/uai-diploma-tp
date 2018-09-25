@@ -1,0 +1,26 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)"
+              GeneratedClassNamespace="SaludAr.GUI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="IdiomaPorDefecto" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">es-AR</Value>
+    </Setting>
+    <Setting Name="ClaveCompartida" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SakR6YLvT3l7c90l4V+1LuYgKzqd7o9hBDrD0BEiHSw=</Value>
+    </Setting>
+    <Setting Name="EstaCorrupto" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CadenaDeConexion" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">
+        &lt;?xml version="1.0" encoding="utf-16"?&gt;
+        &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+        &lt;ConnectionString&gt;Server=.\SQL_UAI;Database=SaludArDb;Trusted_Connection=True;&lt;/ConnectionString&gt;
+        &lt;/SerializableConnectionString&gt;
+      </DesignTimeValue>
+      <Value Profile="(Default)">Server=.\SQL_UAI;Database=SaludArDb;Trusted_Connection=True;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

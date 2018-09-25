@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{122E9E30-DB04-426C-A9F3-C35DAE5C4C6C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SaludAr.BE</RootNamespace>
+    <AssemblyName>SaludAr.BE</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agenda\DefinicionAgenda.cs" />
+    <Compile Include="Agenda\DiaSemana.cs" />
+    <Compile Include="Agenda\EntradaAgenda.cs" />
+    <Compile Include="Agenda\SlotDeAgenda.cs" />
+    <Compile Include="Agenda\Turno.cs" />
+    <Compile Include="Bitacora\Evento.cs" />
+    <Compile Include="CentroDeSalud.cs" />
+    <Compile Include="Empleados\Empleado.cs" />
+    <Compile Include="Especialidad.cs" />
+    <Compile Include="HistoriaClinica\EstudioImagenologia.cs" />
+    <Compile Include="HistoriaClinica\EstudioLaboratorio.cs" />
+    <Compile Include="HistoriaClinica\EventoClinico.cs" />
+    <Compile Include="HistoriaClinica\EvolucionClinicaTurno.cs" />
+    <Compile Include="HistoriaClinica\HC.cs" />
+    <Compile Include="Infraestructura\ConstantesDeTexto.cs" />
+    <Compile Include="Bitacora\EntradaEnBitacora.cs" />
+    <Compile Include="Infraestructura\PuntoDeRestauracion.cs" />
+    <Compile Include="Infraestructura\Familia.cs" />
+    <Compile Include="Infraestructura\Idioma.cs" />
+    <Compile Include="Infraestructura\IPermiso.cs" />
+    <Compile Include="Infraestructura\Patente.cs" />
+    <Compile Include="Bitacora\Severidad.cs" />
+    <Compile Include="Infraestructura\Usuario.cs" />
+    <Compile Include="Empleados\Profesional.cs" />
+    <Compile Include="Infraestructura\ValorDeEnumeracion.cs" />
+    <Compile Include="Paciente.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Empleados\Sexo.cs" />
+    <Compile Include="Seguridad\IEntidadConDigitoVerificador.cs" />
+    <Compile Include="Seguridad\DatoSensibleAttribute.cs" />
+    <Compile Include="Seguridad\DigitoVerificadorVertical.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

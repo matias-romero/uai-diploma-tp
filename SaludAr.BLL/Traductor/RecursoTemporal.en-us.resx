@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BitacoraEventoSeguridad" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="BitacoraFiltrar" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="BitacoraRangoFechas" xml:space="preserve">
+    <value>Date range</value>
+  </data>
+  <data name="BitacoraRangoFechasInvalido" xml:space="preserve">
+    <value>From date must be earlier than To date.</value>
+  </data>
+  <data name="BitacoraTitulo" xml:space="preserve">
+    <value>System Log</value>
+  </data>
+  <data name="BotonAnterior" xml:space="preserve">
+    <value>Prev.</value>
+  </data>
+  <data name="BotonBackup" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="BotonBuscar" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="BotonCancelar" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="BotonEliminar" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="BotonGuardar" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="BotonNuevo" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="BotonOk" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="BotonRestore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="BotonSiguiente" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="CentroDeSalud" xml:space="preserve">
+    <value>Healthcare center</value>
+  </data>
+  <data name="CentroDeSalud_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="CentroDeSalud_Nombre" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="CifradoDesencriptar" xml:space="preserve">
+    <value>Decrypt</value>
+  </data>
+  <data name="CifradoDestino" xml:space="preserve">
+    <value>Output</value>
+  </data>
+  <data name="CifradoEncriptar" xml:space="preserve">
+    <value>Encrypt</value>
+  </data>
+  <data name="CifradoOrigen" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="CifradoTitulo" xml:space="preserve">
+    <value>Crypto Services</value>
+  </data>
+  <data name="DiaSemana_Domingo" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="DiaSemana_Jueves" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="DiaSemana_Lunes" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="DiaSemana_Martes" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="DiaSemana_Miercoles" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="DiaSemana_Sabado" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="DiaSemana_Viernes" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="EditarOfertaAgenda" xml:space="preserve">
+    <value>Edit Scheduler Offer</value>
+  </data>
+  <data name="Empleado_Apellido" xml:space="preserve">
+    <value>Lastname</value>
+  </data>
+  <data name="Empleado_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Empleado_Nombre" xml:space="preserve">
+    <value>Firstname</value>
+  </data>
+  <data name="Empleado_NroLegajo" xml:space="preserve">
+    <value>File Number</value>
+  </data>
+  <data name="Empleado_Sexo" xml:space="preserve">
+    <value>Sex</value>
+  </data>
+  <data name="Empleado_Telefono" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="EntradaAgenda_DiaSemana" xml:space="preserve">
+    <value>Weekday</value>
+  </data>
+  <data name="EntradaAgenda_Duracion" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="EntradaAgenda_FinBloque" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="EntradaAgenda_InicioBloque" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="ErrorElementoRepetido" xml:space="preserve">
+    <value>Another element already exists with the same code.</value>
+  </data>
+  <data name="ErrorNoEspecificado" xml:space="preserve">
+    <value>Unexpected error. Please contact to the administrator.</value>
+  </data>
+  <data name="ErrorPacienteRequerido" xml:space="preserve">
+    <value>Patient required</value>
+  </data>
+  <data name="Especialidad" xml:space="preserve">
+    <value>Specialty</value>
+  </data>
+  <data name="Especialidad_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Especialidad_Nombre" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="EsProfesionalDeLaSalud" xml:space="preserve">
+    <value>Is healthcare professional</value>
+  </data>
+  <data name="EventoAdministradorRealizoUnaCopiaDeSeguridad" xml:space="preserve">
+    <value>A new backup was made</value>
+  </data>
+  <data name="EventoAdministradorRecuperoBaseDeDatos" xml:space="preserve">
+    <value>Database restored</value>
+  </data>
+  <data name="EventoPlanificadorConfiguroOfertaAgenda" xml:space="preserve">
+    <value>Scheduler configuration changed</value>
+  </data>
+  <data name="EventoUsuarioFalloIngresandoCredenciales" xml:space="preserve">
+    <value>User attempted to login using wrong credentials</value>
+  </data>
+  <data name="EventoUsuarioIngresoAlSistema" xml:space="preserve">
+    <value>User logged in</value>
+  </data>
+  <data name="EventoUsuarioSalioDelSistema" xml:space="preserve">
+    <value>User logged out</value>
+  </data>
+  <data name="FechaTentativa" xml:space="preserve">
+    <value>Estimated Date</value>
+  </data>
+  <data name="HabilitarComoUsuario" xml:space="preserve">
+    <value>Enable log-in</value>
+  </data>
+  <data name="IngreseNuevoNombreParaElPerfil" xml:space="preserve">
+    <value>Enter profile name</value>
+  </data>
+  <data name="LeyendaFiltrarTodos" xml:space="preserve">
+    <value>(All)</value>
+  </data>
+  <data name="LoginContrasena" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="LoginErrorAutenticacion" xml:space="preserve">
+    <value>User or password doesn't match with our records. Please try again.</value>
+  </data>
+  <data name="LoginNombreUsuario" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="MenuAgendas" xml:space="preserve">
+    <value>Agendas</value>
+  </data>
+  <data name="MenuArchivo" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="MenuAsignarTurno" xml:space="preserve">
+    <value>Assign...</value>
+  </data>
+  <data name="MenuBackupRestore" xml:space="preserve">
+    <value>Backup / Restore</value>
+  </data>
+  <data name="MenuCentrosDeSalud" xml:space="preserve">
+    <value>Healthcare Centers</value>
+  </data>
+  <data name="MenuConfigurarAgenda" xml:space="preserve">
+    <value>Configure Scheduler</value>
+  </data>
+  <data name="MenuEmpleados" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="MenuEspecialidades" xml:space="preserve">
+    <value>Specialties</value>
+  </data>
+  <data name="MenuGestionPerfiles" xml:space="preserve">
+    <value>Profiles Editor</value>
+  </data>
+  <data name="MenuHerramientas" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="MenuIdioma" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="MenuMisTurnos" xml:space="preserve">
+    <value>My appointments</value>
+  </data>
+  <data name="MenuOpciones" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="MenuPacientes" xml:space="preserve">
+    <value>Patients</value>
+  </data>
+  <data name="MenuProfesionales" xml:space="preserve">
+    <value>Professionals</value>
+  </data>
+  <data name="MenuRRHH" xml:space="preserve">
+    <value>HR</value>
+  </data>
+  <data name="MenuSalir" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="MenuTurnos" xml:space="preserve">
+    <value>Appointments</value>
+  </data>
+  <data name="MenuVerDisponibilidadTurnos" xml:space="preserve">
+    <value>Check availability</value>
+  </data>
+  <data name="Paciente_Apellido" xml:space="preserve">
+    <value>Lastname</value>
+  </data>
+  <data name="Paciente_FechaNacimiento" xml:space="preserve">
+    <value>Birthdate</value>
+  </data>
+  <data name="Paciente_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Paciente_Nombre" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Paciente_NumeroDocumento" xml:space="preserve">
+    <value>SSN</value>
+  </data>
+  <data name="Paciente_Sexo" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Patente_PA0001" xml:space="preserve">
+    <value>Care of a patient</value>
+  </data>
+  <data name="Patente_PA0002" xml:space="preserve">
+    <value>Specialist referral</value>
+  </data>
+  <data name="Patente_PA0003" xml:space="preserve">
+    <value>Register medical service</value>
+  </data>
+  <data name="Patente_PG0001" xml:space="preserve">
+    <value>Configure Care Centers</value>
+  </data>
+  <data name="Patente_PG0002" xml:space="preserve">
+    <value>Configure Specialties</value>
+  </data>
+  <data name="Patente_PG0003" xml:space="preserve">
+    <value>Configure Medical Services</value>
+  </data>
+  <data name="Patente_PP0001" xml:space="preserve">
+    <value>Add new patient</value>
+  </data>
+  <data name="Patente_PP0002" xml:space="preserve">
+    <value>Edit patient data</value>
+  </data>
+  <data name="Patente_PP0003" xml:space="preserve">
+    <value>View Clinical History</value>
+  </data>
+  <data name="Patente_PP0004" xml:space="preserve">
+    <value>Edit professional specialties</value>
+  </data>
+  <data name="Patente_PP0005" xml:space="preserve">
+    <value>Register new employee</value>
+  </data>
+  <data name="Patente_PP0006" xml:space="preserve">
+    <value>Fire employee</value>
+  </data>
+  <data name="Patente_PS0001" xml:space="preserve">
+    <value>Allow system access</value>
+  </data>
+  <data name="Patente_PS0002" xml:space="preserve">
+    <value>Revoke system access</value>
+  </data>
+  <data name="Patente_PS0003" xml:space="preserve">
+    <value>Reset user password</value>
+  </data>
+  <data name="Patente_PS0004" xml:space="preserve">
+    <value>Backup / Restore related tasks</value>
+  </data>
+  <data name="Patente_PS0005" xml:space="preserve">
+    <value>Assign roles per user</value>
+  </data>
+  <data name="Patente_PT0001" xml:space="preserve">
+    <value>Configure Scheduller</value>
+  </data>
+  <data name="Patente_PT0002" xml:space="preserve">
+    <value>Make an appointment</value>
+  </data>
+  <data name="Patente_PT0003" xml:space="preserve">
+    <value>View appointments scheduled</value>
+  </data>
+  <data name="Patente_PT0004" xml:space="preserve">
+    <value>Find free appointment slot</value>
+  </data>
+  <data name="Patente_PT0005" xml:space="preserve">
+    <value>Admit a patient</value>
+  </data>
+  <data name="Patente_PU0003" xml:space="preserve">
+    <value>Edit employee data</value>
+  </data>
+  <data name="Sexo_Femenino" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="Sexo_Masculino" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="Sexo_NoEspecificado" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="SistemaCorruptoException" xml:space="preserve">
+    <value>Integrity check failed! The system is in unoperable state. Contact with your administrator.</value>
+  </data>
+  <data name="SistemaRestauradoCorrectamente" xml:space="preserve">
+    <value>System restored. Please restart the application to continue.</value>
+  </data>
+  <data name="TituloAplicacion" xml:space="preserve">
+    <value>SaludAR</value>
+  </data>
+  <data name="TituloBienvenido" xml:space="preserve">
+    <value>Welcome!</value>
+  </data>
+  <data name="TituloUsuarioEnLinea" xml:space="preserve">
+    <value>User: {0}</value>
+  </data>
+  <data name="Usuario_Nombre" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Usuario_Permiso" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Vigencia" xml:space="preserve">
+    <value>Validity</value>
+  </data>
+  <data name="ErrorLegajoRepetido" xml:space="preserve">
+    <value>Duplicated File Number!</value>
+  </data>
+  <data name="MenuAdmisionarTurnos" xml:space="preserve">
+    <value>Admissions</value>
+  </data>
+  <data name="MensajeTurnoAdmisionado" xml:space="preserve">
+    <value>Admission done. Please wait to be called by the professional</value>
+  </data>
+  <data name="Edad" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="EdadEnAños" xml:space="preserve">
+    <value>{0} y.o</value>
+  </data>
+  <data name="Evolucion" xml:space="preserve">
+    <value>Progress Notes</value>
+  </data>
+  <data name="HistorialClinico" xml:space="preserve">
+    <value>Clinical Events</value>
+  </data>
+  <data name="Profesional_CodMatricula" xml:space="preserve">
+    <value>MR#</value>
+  </data>
+  <data name="FinalizarAtencion" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="SolicitarLaboratorio" xml:space="preserve">
+    <value>Lab. Request</value>
+  </data>
+  <data name="SolicitarRadiografia" xml:space="preserve">
+    <value>Img. Request</value>
+  </data>
+  <data name="ErrorSlotAgendaOcupado" xml:space="preserve">
+    <value>This entry is not available. Please select another one.</value>
+  </data>
+  <data name="MensajeTurnoAsignado" xml:space="preserve">
+    <value>Appointment at {1} confirmed for {0}</value>
+  </data>
+  <data name="Turno_Duracion" xml:space="preserve">
+    <value>Length</value>
+  </data>
+  <data name="Turno_FechaHora" xml:space="preserve">
+    <value>Scheduled at</value>
+  </data>
+  <data name="Turno_FechaHoraAdmision" xml:space="preserve">
+    <value>Admission at</value>
+  </data>
+  <data name="Turno_FechaHoraFinAtencion" xml:space="preserve">
+    <value>Ended at</value>
+  </data>
+  <data name="Turno_FechaHoraInicioAtencion" xml:space="preserve">
+    <value>Started at</value>
+  </data>
+  <data name="Turno_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Turno_Paciente" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="Turno_Profesional" xml:space="preserve">
+    <value>Professional</value>
+  </data>
+  <data name="Usuario" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="EventoInformacionPacienteActualizada" xml:space="preserve">
+    <value>Patient related information updated</value>
+  </data>
+  <data name="EventoInformacionUsuarioActualizada" xml:space="preserve">
+    <value>User related information updated</value>
+  </data>
+  <data name="EventoNuevoTurnoAsignado" xml:space="preserve">
+    <value>Appointment created</value>
+  </data>
+  <data name="EventoFinAtencionAmbulatoria" xml:space="preserve">
+    <value>Medical consultation finished</value>
+  </data>
+  <data name="EventoInicioAtencionAmbulatoria" xml:space="preserve">
+    <value>Medical consultation started</value>
+  </data>
+</root>

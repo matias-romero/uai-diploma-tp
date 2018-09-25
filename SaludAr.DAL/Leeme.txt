@@ -1,0 +1,20 @@
+﻿Convenciones definidas para la capa de enlace a datos
+-----------------------------------------------------
+
+Por cada grafo de entidades que se desee persistir debe generarse:
+-Una clase concreta con el nombre de la entidad raíz en singular (Ej. Paciente) en un archivo con el mismo nombre
+-Esta clase debe ser de tipo "Internal" al proyecto DAL para esconder la implementación y solo debe contener un único constructor "Public" capaz de aceptar alguno de estos objetos:
+---SaludAr.DAL.Internal.DatabaseContext para consumir servicios utilizando la capa de mapeos ORM con patrones del tipo UnitOfWork y Repository
+---SaludAr.DAL.Internal.IEntityRawSql para ejecutar consultas SQL directamente contra el repositorio subyacente
+
+-Para soportar correctamente la inverión de control cada una de estas clases debe implementar una interfaz "Public" en el mismo namespace, con el prefijo "I" + NombreClase.
+Ejemplo para SaludAr.DAL.Paciente debe existir SaludAr.DAL.IPaciente preferentemente en el mismo codefile de la clase a fin de poder ubicarlos rapidamente.
+
+-En caso de utilizar los servicios del ORM, para cada entidad debe además crearse la definición de mapeo "Objeto <-> Tabla" dentro de la carpeta "Mappers"
+Se recomienda respetar el mismo NombreClase + sufijo "Map". Ejemplo para DAL.Paciente -> Mappers.PacienteMap
+
+Respetando esto todos los servicios DAL se consumen desde la clase SqlHelper, que es la única que conoce la cadena de conexión a la base.
+1- Solicitamos un objeto IUnidadDeTrabajo desde SqlHelper
+2- Pedimos al objeto IUnidadDeTrabajo.NuevoRepositorio<T> donde T es cualquier clase del tipo DAL que respeta lo anterior.
+
+El proyecto BLL inyecta automáticamente todas las dependencias de objetos DAL siguiendo estas convenciones. [SaludAr.BLL.Dependencias.DalRegistry]

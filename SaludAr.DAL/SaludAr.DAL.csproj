@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E30C2B33-5D04-4A4D-B479-C6BA00ADE7F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SaludAr.DAL</RootNamespace>
+    <AssemblyName>SaludAr.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.4\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RefactorThis.GraphDiff, Version=3.0.1.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\RefactorThis.GraphDiff.3.0.1\lib\RefactorThis.GraphDiff.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agenda.cs" />
+    <Compile Include="BackupRestore.cs" />
+    <Compile Include="Bitacora.cs" />
+    <Compile Include="Especialidad.cs" />
+    <Compile Include="CentroDeSalud.cs" />
+    <Compile Include="Empleado.cs" />
+    <Compile Include="HistoriaClinica.cs" />
+    <Compile Include="Idioma.cs" />
+    <Compile Include="Internal\DatabaseContext.cs" />
+    <Compile Include="Internal\DatabaseInitializer.cs" />
+    <Compile Include="Internal\DbContextConSoporteParaDigitosVerificadores.cs" />
+    <Compile Include="Internal\EntityDbSetWrapper.cs" />
+    <Compile Include="Internal\EntityRawSql.cs" />
+    <Compile Include="Internal\RepositorioABM.cs" />
+    <Compile Include="Internal\Auxiliares\FamiliaPatente.cs" />
+    <Compile Include="Internal\Auxiliares\UsuarioPermiso.cs" />
+    <Compile Include="Mappers\DigitoVerificadorVerticalMap.cs" />
+    <Compile Include="Mappers\DefinicionAgendaMap.cs" />
+    <Compile Include="Mappers\TurnoMap.cs" />
+    <Compile Include="Mappers\HCMap.cs" />
+    <Compile Include="Mappers\EstudioLaboratorioMap.cs" />
+    <Compile Include="Mappers\EstudioImagenologiaMap.cs" />
+    <Compile Include="Mappers\EvolucionClinicaTurnoMap.cs" />
+    <Compile Include="Mappers\EventoClinicoMap.cs" />
+    <Compile Include="Mappers\EntradaAgendaMap.cs" />
+    <Compile Include="Mappers\EspecialidadMap.cs" />
+    <Compile Include="Mappers\CentroDeSaludMap.cs" />
+    <Compile Include="Mappers\EntradaEnBitacoraMap.cs" />
+    <Compile Include="Mappers\EventoMap.cs" />
+    <Compile Include="Mappers\PacienteMap.cs" />
+    <Compile Include="Mappers\UsuarioPermisoMap.cs" />
+    <Compile Include="Mappers\FamiliaPatenteMap.cs" />
+    <Compile Include="Mappers\ProfesionalMap.cs" />
+    <Compile Include="Mappers\EmpleadoMap.cs" />
+    <Compile Include="Mappers\FamiliaMap.cs" />
+    <Compile Include="Mappers\PatenteMap.cs" />
+    <Compile Include="Mappers\UsuarioMap.cs" />
+    <Compile Include="Internal\RepositorioBase.cs" />
+    <Compile Include="Paciente.cs" />
+    <Compile Include="Permiso.cs" />
+    <Compile Include="Profesional.cs" />
+    <Compile Include="DigitosVerificadores\CalculadoraIntegridadDV.cs" />
+    <Compile Include="DigitosVerificadores\CalculadoraDV.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="Turno.cs" />
+    <Compile Include="UnidadDeTrabajo.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validaciones\ElementoRepetidoException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SaludAr.BE\SaludAr.BE.csproj">
+      <Project>{122e9e30-db04-426c-a9f3-c35dae5c4c6c}</Project>
+      <Name>SaludAr.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SaludAr.Services\SaludAr.Services.csproj">
+      <Project>{f6272547-d263-4d98-9b95-97659a5484fd}</Project>
+      <Name>SaludAr.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\ListAvailableBackups.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Leeme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
